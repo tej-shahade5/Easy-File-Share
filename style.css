@@ -1,0 +1,33 @@
+:root {
+  --main-bg-color: #e2d4f5;
+  --border-color: #0288d147;
+}
+
+body,
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: var(--main-bg-color);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-container {
+  background: #ffff;
+  border-radius: 25px;
+  box-shadow: 0px 20px 20px #0000002e;
+}
+.drop-zone {
+  width: 500px;
+  min-height: 200px;
+  margin: 30px;
+  border-radius: 15px;
+  border: 2.5px dashed var(--border-color);
+}
