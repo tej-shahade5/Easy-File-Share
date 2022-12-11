@@ -69,4 +69,13 @@ body,
 .dragged .icon-container .left {
   transform: rotate(-10deg) translateX(-20px);
 }
+
+#fileInput {
+  display: none;
+}
+
+.browseBtn { 
+  color: #2196f3;
+  cursor: pointer;
+}
  
