@@ -13,10 +13,12 @@ html {
   margin: 0;
 }
 
-body {
+body,
+.drop-zone {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .upload-container {
@@ -31,3 +33,34 @@ body {
   border-radius: 15px;
   border: 2.5px dashed var(--border-color);
 }
+
+.icon-container {
+  width: 75px;
+  height: 100px;
+  position: relative;
+}
+
+.icon-container img {
+  width: 75px;
+  position: absolute;
+  transform-origin: bottom;
+}
+
+.icon-container .center {
+  z-index: 2;
+}
+
+.icon-container .right,
+.icon-container .left {
+  filter: grayscale(0.5);
+  transform: scale(0.9);
+}
+
+.dragged .icon-container .right {
+  transform: rotate(10deg) translateX(20px);
+}
+
+.dragged .icon-container .left {
+  transform: rotate(-10deg) translateX(-20px);
+}
+ 
