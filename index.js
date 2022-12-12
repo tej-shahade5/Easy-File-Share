@@ -3,6 +3,7 @@ const browseBtn = document.querySelector(".browseBtn");
 const fileInput = document.querySelector("#fileInput");
 
 const bgProgress = document.querySelector(".bg-progress");
+const percentDiv = document.querySelector("#percent");
 
 const host = "https://innshare.herokuapp.com/";
 const uploadURL = host + `${host}api/files`;
@@ -61,4 +62,6 @@ const updateProgess = (e) => {
   const percent = Math.round((e.loaded / e.total) * 100);
   console.log(percent);
   bgProgress.style.width = `${percent}%`;
+
+  percentDiv.innerText = percent;
 };

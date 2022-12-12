@@ -92,6 +92,7 @@ body,
   border: 2px solid var(--main-bg-color);
   margin-bottom: 25px;
   border-radius: 10px;
+  position: relative;
 }
 
 .progress-container .bg-progress {
@@ -101,4 +102,11 @@ body,
   border-radius: 3%;
   transform-origin: left;
   transition: width linear 0.25s;
+  position: absolute;
+}
+
+.progress-container .inner-container {
+  position: absolute;
+  z-index: 1;
+  margin: 10px 15px;
 }
